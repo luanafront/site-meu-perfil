@@ -30,6 +30,7 @@ body {
     .principal {
         background-color: var(--cor-fundo-login);
         border-radius: 30px 30px 0 0 ;
+    
         
     }
         .principal__perfil {
@@ -56,7 +57,7 @@ body {
         color: var(--cor-fundo-login) 
     }
     .informacao__formulario{
-        margin: 20px 0 50px 20px;
+        margin: 20px 0 0 20px;
 
     }
         .informacao__titulo {
@@ -66,6 +67,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 35px;   
+            font-weight: 20;
         }
         .formulario__texto {
             margin: 10px 0 3px 0 ;
@@ -81,3 +84,69 @@ body {
             color: var(--cor-rosa-escuro);
             background-color: var(--cor-fundo-geral);
         }
+.principal__amigos {
+    background-color: var(--cor-rosa-escuro);
+    margin: 0;
+    padding-bottom: 35px;
+}
+    .amigos__titulo {
+        text-align: center;
+        margin: 0;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-fundo-login);
+        font-size: 35px;   
+        font-weight: 20;
+    }
+    .amigos__opcoes{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        padding: 0;
+    }
+        .amigos__opcao {
+            margin: 0 10px 0 10px;
+            display: flex;
+            background-color: var(--cor-fundo-login);
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .retrato {
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            position: relative;
+        }
+        
+            .amigos__opcao--foto {
+                width: 100px;
+            }
+        .ajuste__vertical {
+            position: absolute;
+            top: -25px;
+        }
+        .foto__deitada {
+            width: auto;
+            height: 100%;
+            position: absolute;
+            left: -15px;
+        }
+            .amigos__opcao--nome {
+                margin: 10px 0 0 0;
+                color: var(--cor-rosa-escuro);
+            }
+            .amigos__opcoes::-webkit-scrollbar {
+                width: 12px;
+            }
+            .amigos__opcoes::-webkit-scrollbar-track {
+                background: var(--cor-fundo-geral); 
+            }
+            .amigos__opcoes::-webkit-scrollbar-thumb {
+                background-color: var(--cor-rosa-escuro);
+                border-radius: 20px;   
