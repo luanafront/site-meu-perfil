@@ -142,11 +142,14 @@ body {
                 color: var(--cor-rosa-escuro);
             }
             .amigos__opcoes::-webkit-scrollbar {
-                width: 12px;
+                width: 10px;
             }
             .amigos__opcoes::-webkit-scrollbar-track {
                 background: var(--cor-fundo-geral); 
+                height: 5px;
             }
             .amigos__opcoes::-webkit-scrollbar-thumb {
                 background-color: var(--cor-rosa-escuro);
-                border-radius: 20px;   
+                border-radius: 20px;  
+                border:  2px solid var(--cor-fundo-geral)
+            }
