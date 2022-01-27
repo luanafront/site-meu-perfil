@@ -153,3 +153,20 @@ body {
                 border-radius: 20px;  
                 border:  2px solid var(--cor-fundo-geral)
             }
+@media(min-width:730px) {
+    .principal {
+        width:70% ;
+       margin: 0 auto;
+       margin-bottom: 50px;
+    }
+        .principal {
+            border-radius: 30px;
+        }
+        .principal__amigos {
+            border-radius: 0 0 30px 30px;
+        }
+        .informacao__formulario {
+            display: flex;
+            justify-content: space-evenly;
+        }
+}
